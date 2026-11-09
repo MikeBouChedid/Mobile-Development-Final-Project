@@ -1,0 +1,180 @@
+{
+  "stores": [
+    {
+      "id": "cafeteria",
+      "name": "Cafeteria",
+      "category": "Food",
+      "logo": "🍽️",
+      "color": "#FDE7D9",
+      "description": "Fresh sandwiches, manakish and salads made every morning.",
+      "prepTime": 15,
+      "openingHours": { "open": "07:30", "close": "16:30" }
+    },
+    {
+      "id": "coffee",
+      "name": "Coffee Corner",
+      "category": "Drinks",
+      "logo": "☕",
+      "color": "#EFE3D3",
+      "description": "Espresso, lattes, smoothies and fresh pastries.",
+      "prepTime": 5,
+      "openingHours": { "open": "07:00", "close": "18:00" }
+    },
+    {
+      "id": "bookstore",
+      "name": "Bookstore & Stationery",
+      "category": "Stationery",
+      "logo": "📚",
+      "color": "#E1ECFB",
+      "description": "Notebooks, pens, calculators and everything for class.",
+      "prepTime": 10,
+      "openingHours": { "open": "08:00", "close": "16:00" }
+    },
+    {
+      "id": "printing",
+      "name": "Printing Office",
+      "category": "Printing",
+      "logo": "🖨️",
+      "color": "#E3F5EA",
+      "description": "Print, bind and laminate your documents.",
+      "prepTime": 20,
+      "openingHours": { "open": "08:00", "close": "17:00" }
+    }
+  ],
+
+  "products": [
+    { "id": "p1", "storeId": "cafeteria", "category": "Sandwiches", "name": "Chicken Sub", "emoji": "🥖", "price": 4.5, "inStock": true,
+      "description": "Grilled chicken, garlic sauce, pickles and fries in a sub bread.",
+      "options": { "sizes": [{ "label": "Regular", "extra": 0 }, { "label": "Large", "extra": 1.5 }],
+                   "extras": [{ "label": "Extra cheese", "price": 0.5 }, { "label": "Fries on the side", "price": 1 }] } },
+    { "id": "p2", "storeId": "cafeteria", "category": "Sandwiches", "name": "Halloumi Sandwich", "emoji": "🥪", "price": 3.5, "inStock": true,
+      "description": "Grilled halloumi, tomato, mint and cucumber.",
+      "options": { "sizes": [{ "label": "Regular", "extra": 0 }, { "label": "Large", "extra": 1 }],
+                   "extras": [{ "label": "Olives", "price": 0.25 }] } },
+    { "id": "p3", "storeId": "cafeteria", "category": "Sandwiches", "name": "Tuna Sandwich", "emoji": "🐟", "price": 3.75, "inStock": false,
+      "description": "Tuna, corn, lettuce and mayo.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p4", "storeId": "cafeteria", "category": "Sandwiches", "name": "Club Sandwich", "emoji": "🥓", "price": 5, "inStock": true,
+      "description": "Turkey, cheese, egg, lettuce and tomato in toasted bread.",
+      "options": { "sizes": [], "extras": [{ "label": "Fries on the side", "price": 1 }] } },
+    { "id": "p5", "storeId": "cafeteria", "category": "Manakish", "name": "Zaatar Manakish", "emoji": "🫓", "price": 1.5, "inStock": true,
+      "description": "Freshly baked with zaatar and olive oil.",
+      "options": { "sizes": [], "extras": [{ "label": "Vegetables", "price": 0.25 }, { "label": "Labneh", "price": 0.5 }] } },
+    { "id": "p6", "storeId": "cafeteria", "category": "Manakish", "name": "Cheese Manakish", "emoji": "🧀", "price": 2.5, "inStock": true,
+      "description": "Akkawi and mozzarella cheese.", "options": { "sizes": [], "extras": [{ "label": "Turkey", "price": 0.75 }] } },
+    { "id": "p7", "storeId": "cafeteria", "category": "Salads", "name": "Fattoush", "emoji": "🥗", "price": 3, "inStock": true,
+      "description": "Lebanese salad with crispy bread and pomegranate molasses.",
+      "options": { "sizes": [{ "label": "Small", "extra": 0 }, { "label": "Large", "extra": 1.25 }], "extras": [] } },
+    { "id": "p8", "storeId": "cafeteria", "category": "Salads", "name": "Chicken Caesar", "emoji": "🥬", "price": 4, "inStock": true,
+      "description": "Romaine, grilled chicken, parmesan and croutons.",
+      "options": { "sizes": [], "extras": [{ "label": "Extra chicken", "price": 1 }] } },
+    { "id": "p9", "storeId": "cafeteria", "category": "Snacks & Drinks", "name": "Water Bottle", "emoji": "💧", "price": 0.5, "inStock": true,
+      "description": "500 ml mineral water.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p10", "storeId": "cafeteria", "category": "Snacks & Drinks", "name": "Soft Drink", "emoji": "🥤", "price": 1, "inStock": true,
+      "description": "330 ml can.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p11", "storeId": "cafeteria", "category": "Snacks & Drinks", "name": "Chocolate Chip Cookie", "emoji": "🍪", "price": 1.25, "inStock": true,
+      "description": "Baked in-house every morning.", "options": { "sizes": [], "extras": [] } },
+
+    { "id": "p12", "storeId": "coffee", "category": "Hot Drinks", "name": "Espresso", "emoji": "☕", "price": 1.5, "inStock": true,
+      "description": "Single shot of our house blend.",
+      "options": { "sizes": [{ "label": "Single", "extra": 0 }, { "label": "Double", "extra": 0.75 }], "extras": [] } },
+    { "id": "p13", "storeId": "coffee", "category": "Hot Drinks", "name": "Cappuccino", "emoji": "☕", "price": 2.5, "inStock": true,
+      "description": "Espresso with steamed milk foam.",
+      "options": { "sizes": [{ "label": "Small", "extra": 0 }, { "label": "Medium", "extra": 0.5 }, { "label": "Large", "extra": 1 }],
+                   "extras": [{ "label": "Extra shot", "price": 0.5 }, { "label": "Oat milk", "price": 0.5 }, { "label": "Caramel syrup", "price": 0.25 }] } },
+    { "id": "p14", "storeId": "coffee", "category": "Hot Drinks", "name": "Caffè Latte", "emoji": "🥛", "price": 2.75, "inStock": true,
+      "description": "Espresso with lots of steamed milk.",
+      "options": { "sizes": [{ "label": "Small", "extra": 0 }, { "label": "Medium", "extra": 0.5 }, { "label": "Large", "extra": 1 }],
+                   "extras": [{ "label": "Extra shot", "price": 0.5 }, { "label": "Vanilla syrup", "price": 0.25 }] } },
+    { "id": "p15", "storeId": "coffee", "category": "Hot Drinks", "name": "Turkish Coffee", "emoji": "🫖", "price": 1.25, "inStock": true,
+      "description": "Traditional coffee with cardamom.",
+      "options": { "sizes": [], "extras": [{ "label": "Sugar", "price": 0 }] } },
+    { "id": "p16", "storeId": "coffee", "category": "Hot Drinks", "name": "Hot Chocolate", "emoji": "🍫", "price": 2.5, "inStock": true,
+      "description": "Rich cocoa with whipped cream.",
+      "options": { "sizes": [{ "label": "Medium", "extra": 0 }, { "label": "Large", "extra": 0.75 }], "extras": [{ "label": "Marshmallows", "price": 0.25 }] } },
+    { "id": "p17", "storeId": "coffee", "category": "Cold Drinks", "name": "Iced Latte", "emoji": "🧊", "price": 3, "inStock": true,
+      "description": "Cold milk and espresso over ice.",
+      "options": { "sizes": [{ "label": "Medium", "extra": 0 }, { "label": "Large", "extra": 0.75 }], "extras": [{ "label": "Caramel syrup", "price": 0.25 }] } },
+    { "id": "p18", "storeId": "coffee", "category": "Cold Drinks", "name": "Fresh Orange Juice", "emoji": "🍊", "price": 2.5, "inStock": false,
+      "description": "Squeezed on order.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p19", "storeId": "coffee", "category": "Cold Drinks", "name": "Berry Smoothie", "emoji": "🍓", "price": 3.5, "inStock": true,
+      "description": "Strawberry, blueberry, banana and yogurt.", "options": { "sizes": [], "extras": [{ "label": "Protein scoop", "price": 1 }] } },
+    { "id": "p20", "storeId": "coffee", "category": "Bakery", "name": "Butter Croissant", "emoji": "🥐", "price": 1.5, "inStock": true,
+      "description": "Flaky French-style croissant.", "options": { "sizes": [], "extras": [{ "label": "Chocolate filling", "price": 0.5 }] } },
+    { "id": "p21", "storeId": "coffee", "category": "Bakery", "name": "Blueberry Muffin", "emoji": "🧁", "price": 1.75, "inStock": true,
+      "description": "Soft muffin loaded with blueberries.", "options": { "sizes": [], "extras": [] } },
+
+    { "id": "p22", "storeId": "bookstore", "category": "Notebooks", "name": "A4 Notebook (100 pages)", "emoji": "📓", "price": 2.5, "inStock": true,
+      "description": "Lined A4 notebook, Antonine cover.", "options": { "sizes": [{ "label": "Lined", "extra": 0 }, { "label": "Squared", "extra": 0 }], "extras": [] } },
+    { "id": "p23", "storeId": "bookstore", "category": "Notebooks", "name": "Spiral Notebook (200 pages)", "emoji": "📒", "price": 3.5, "inStock": true,
+      "description": "5-subject spiral notebook.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p24", "storeId": "bookstore", "category": "Notebooks", "name": "Lab Notebook", "emoji": "🧪", "price": 4, "inStock": true,
+      "description": "Hard cover, numbered pages for lab reports.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p25", "storeId": "bookstore", "category": "Writing", "name": "Blue Pens (pack of 5)", "emoji": "🖊️", "price": 1.5, "inStock": true,
+      "description": "Smooth ballpoint pens.", "options": { "sizes": [{ "label": "Blue", "extra": 0 }, { "label": "Black", "extra": 0 }], "extras": [] } },
+    { "id": "p26", "storeId": "bookstore", "category": "Writing", "name": "Highlighters (4 colors)", "emoji": "🖍️", "price": 3, "inStock": true,
+      "description": "Yellow, green, pink and blue.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p27", "storeId": "bookstore", "category": "Writing", "name": "Pencil Set + Eraser", "emoji": "✏️", "price": 2, "inStock": true,
+      "description": "HB pencils, sharpener and eraser.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p28", "storeId": "bookstore", "category": "Accessories", "name": "Scientific Calculator", "emoji": "🧮", "price": 25, "inStock": false,
+      "description": "Exam-approved scientific calculator.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p29", "storeId": "bookstore", "category": "Accessories", "name": "USB Flash Drive 32GB", "emoji": "💾", "price": 8, "inStock": true,
+      "description": "USB 3.0 flash drive.", "options": { "sizes": [{ "label": "32 GB", "extra": 0 }, { "label": "64 GB", "extra": 4 }], "extras": [] } },
+    { "id": "p30", "storeId": "bookstore", "category": "Accessories", "name": "Sticky Notes", "emoji": "🗒️", "price": 1.25, "inStock": true,
+      "description": "Pack of 4 colorful pads.", "options": { "sizes": [], "extras": [] } },
+
+    { "id": "p31", "storeId": "printing", "category": "Services", "name": "Lamination (A4)", "emoji": "🪪", "price": 1, "inStock": true,
+      "description": "Protect your document with a glossy laminate.", "options": { "sizes": [{ "label": "A4", "extra": 0 }, { "label": "A3", "extra": 1 }], "extras": [] } },
+    { "id": "p32", "storeId": "printing", "category": "Services", "name": "Scantron Answer Sheet", "emoji": "📝", "price": 0.25, "inStock": true,
+      "description": "Official answer sheet for exams.", "options": { "sizes": [], "extras": [] } },
+    { "id": "p33", "storeId": "printing", "category": "Paper", "name": "A4 Paper Pack (100 sheets)", "emoji": "📄", "price": 4, "inStock": true,
+      "description": "80 g/m² white paper.", "options": { "sizes": [], "extras": [] } }
+  ],
+
+  "buildings": [
+    { "id": "A", "name": "Building A – Administration" },
+    { "id": "B", "name": "Building B – Engineering" },
+    { "id": "C", "name": "Building C – Business" },
+    { "id": "D", "name": "Building D – Health Sciences" },
+    { "id": "E", "name": "Building E – Arts & Music" },
+    { "id": "L", "name": "Central Library" }
+  ],
+
+  "deliverySlots": [
+    { "id": "s1", "start": "08:15", "end": "08:30" },
+    { "id": "s2", "start": "09:45", "end": "10:00" },
+    { "id": "s3", "start": "11:15", "end": "11:30" },
+    { "id": "s4", "start": "12:45", "end": "13:30" },
+    { "id": "s5", "start": "14:45", "end": "15:00" },
+    { "id": "s6", "start": "16:15", "end": "16:30" }
+  ],
+
+  "printPrices": {
+    "blackWhitePerPage": 0.05,
+    "colorPerPage": 0.25,
+    "doubleSidedDiscount": 0.1,
+    "binding": { "none": 0, "staple": 0.25, "spiral": 1.5 },
+    "maxPages": 200
+  },
+
+  "faculties": [
+    "Engineering",
+    "Business",
+    "Public Health",
+    "Music & Musicology",
+    "Arts & Design",
+    "Theology",
+    "Education",
+    "Staff"
+  ],
+
+  "couriers": ["Charbel", "Maya", "Joe", "Rita", "Elie", "Nour"],
+
+  "demoUser": {
+    "fullName": "Demo Student",
+    "email": "demo@ua.edu.lb",
+    "password": "demo1234",
+    "universityId": "20241234",
+    "faculty": "Engineering",
+    "phone": "70123456"
+  }
+}
